@@ -1,0 +1,847 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --first-color: #2457c5;
+    --second-color: #0099ff;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.my-btn {
+    display: inline-block;
+    padding: 10px 30px;
+    background: var(--first-color);
+    color: #fff;
+    border-radius: 4px;
+    transition: 0.6s;
+}
+
+.my-btn:hover {
+    background: var(--second-color);
+    color: #fff;
+}
+
+.my-bg-color {
+    background: var(--first-color);
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-center-1 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.my-flex {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.scroll-add {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    animation: scroll 0.6s 1;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+
+/* ****************************scroll bar css********************* */
+
+::-webkit-scrollbar {
+    width: 16px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #606060;
+    border-radius: 8px;
+    border: 4px solid transparent;
+    background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #adabab;
+    border-radius: 8px;
+    border: 4px solid transparent;
+    background-clip: content-box;
+}
+
+
+/* ****************************header css************************* */
+
+.top-bar {
+    padding: 15px;
+}
+
+.icon-num span a i {
+    margin-right: 10px;
+    color: var(--first-color);
+}
+
+.icon-num span a {
+    margin-right: 10px;
+    font-size: 20px;
+    color: #000;
+}
+
+
+/* ****************************nav css*************************** */
+
+header nav a {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 4px 30px!important;
+}
+
+header nav a:hover {
+    color: var(--second-color);
+}
+
+nav {
+    border-bottom: 5px solid var(--second-color);
+    z-index: 999;
+}
+
+.fa-bars {
+    color: #fff;
+}
+
+.mu-bar-m {
+    padding: 20px;
+    background: var(--second-color);
+}
+
+
+/***************************Hero Slider Start **********************/
+
+.hero-slider .owl-prev,
+.hero-slider .owl-next {
+    background: var(--first-color)!important;
+    width: 35px;
+    height: 35px;
+    color: #fff!important;
+    transition: 0.3s;
+}
+
+.hero-slider {
+    position: relative;
+}
+
+.hero-slider .owl-prev {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translate(0, -50%);
+}
+
+.hero-slider .owl-next {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translate(0, -50%);
+}
+
+.hero-slider .owl-nav {
+    margin: 0;
+}
+
+.hero-slider-item {
+    position: relative;
+}
+
+.hero-slider-text {
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translate(0, -50%);
+}
+
+.hero-slider-text h2 {
+    color: var(--first-color);
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.hero-slider .active .hero-slider-text h2 {
+    animation: slideInDown 2s 0s;
+}
+
+.hero-slider .active .hero-slider-text p {
+    animation: slideInLeft 2s 0s;
+}
+
+.hero-slider .active .hero-slider-text a {
+    animation: bounceInUp 2s 0s;
+}
+
+
+/* **************************Abuot Section Start ******************* */
+
+.about {
+    padding: 50px 0;
+}
+
+.about-img {
+    padding-bottom: 40px;
+    position: relative;
+}
+
+.expri {
+    position: absolute;
+    top: 66%;
+    right: 15%;
+}
+
+.expri h3 {
+    color: #fff;
+    font-size: 25px;
+}
+
+.expri h3 strong {
+    font-size: 2.5rem;
+}
+
+.about-img img {
+    width: 100%;
+    border: 12px solid var(--second-color);
+    border-radius: 50%;
+}
+
+.about-text a {
+    margin-top: 15px;
+}
+
+.why-choose {
+    padding: 33px 0;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.why-choose h2 {
+    width: 30%;
+    background: var(--first-color);
+    border-radius: 0 30px 30px 0;
+    text-align: center;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.logo-circle {
+    background: var(--second-color);
+    border-radius: 50%;
+    margin-right: 10px;
+    padding: 5px;
+    transition: 0.3s;
+}
+
+.logo-circle:hover {
+    background: var(--first-color);
+    transform: scale(1.1);
+}
+
+.cho-icon {
+    padding: 40px;
+}
+
+.why-choose ul li {
+    margin-bottom: 20px;
+    transition: 0.3s;
+}
+
+.why-choose ul li:hover {
+    cursor: pointer;
+    color: var(--first-color);
+    text-indent: 5px;
+    font-weight: 600;
+}
+
+.why-choose {
+    position: relative;
+}
+
+.choose-img {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+
+/* **************************Abuot Section end ********************* */
+
+
+/* **************************Our Services Section Start ************ */
+
+.Our-Services {
+    background: url('../img/bg-ser.jpg');
+}
+
+.Our-Services h2 {
+    background: var(--second-color);
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+}
+
+.ser-box-sec {
+    margin: 30px 0;
+    border: 1px solid #fff;
+    cursor: pointer;
+}
+
+.ser-img-sec {
+    overflow: hidden;
+}
+
+.ser-img-sec img {
+    transition: 0.3s;
+}
+
+.ser-img-sec img:hover {
+    transform: scale(1.1);
+}
+
+.ser-box-sec h3 {
+    text-align: center;
+    padding: 20px 0;
+    margin: 0;
+    color: #fff;
+    transition: 0.6s;
+}
+
+.ser-box-sec h3:hover {
+    background: var(--second-color);
+}
+
+
+/* **************************Our Services Section end  ************* */
+
+
+/* **************************Our Services include Section start  *** */
+
+.Services-include {
+    margin: 40px 0;
+}
+
+.Services-include h2 {
+    padding: 10px 0;
+    text-align: center;
+}
+
+.ser-include-text li i {
+    margin-right: 6px;
+}
+
+.ser-include-text li {
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-bottom: 15px;
+}
+
+.ser-include-text li:hover {
+    color: var(--first-color);
+    transform: translateX(10px);
+}
+
+.ser-include-img {
+    overflow: hidden;
+}
+
+.serv-includ-box:hover .ser-include-img img {
+    transform: scale(1.1);
+}
+
+.ser-include-img img {
+    transition: 0.3s;
+}
+
+
+/* **************************Our Services include Section end  ***** */
+
+
+/* **************************Our Projects Gallery Section start ***** */
+
+.Our-Projects-Gallery h2 {
+    padding: 10px 0;
+    text-align: center;
+}
+
+.gallery-img-box,
+.gallery-img-box-1 {
+    position: relative;
+    cursor: pointer;
+}
+
+.gallery-img-box img,
+.gallery-img-box-1 img {
+    width: 100%;
+    padding: 5px;
+}
+
+.gallery-img-box:nth-child(1) {
+    width: 100%;
+}
+
+.gallery-img-box:nth-child(2) {
+    width: 50%;
+}
+
+.gallery-img-box:nth-child(3) {
+    width: 50%;
+}
+
+.gallery-img-box-1:nth-child(1) {
+    width: 50%;
+}
+
+.gallery-img-box-1:nth-child(2) {
+    width: 50%;
+}
+
+.gallery-img-box-1:nth-child(3) {
+    width: 100%;
+}
+
+.galle-50 {
+    width: 50%;
+}
+
+.gal-img-hover {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background: #0099ff70;
+    visibility: hidden;
+    transition: 0.3s;
+    transform: scale(0);
+}
+
+.gallery-img-box:hover .gal-img-hover,
+.gallery-img-box-1:hover .gal-img-hover {
+    visibility: visible;
+    transform: scale(1);
+}
+
+.hover-icon {
+    width: 100px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/* **************************Our Projects Gallery Section end ******* */
+
+
+/* **************************Services areas Section start *********** */
+
+.Services-areas {
+    padding: 30px 0;
+}
+
+.Services-areas h2 {
+    padding: 20px 0;
+    text-align: center;
+    margin: 0;
+}
+
+.Services-areas-box ul li {
+    padding-left: 22px;
+    margin-bottom: 15px;
+    position: relative;
+    transition: all 0.3s;
+    font-weight: 600;
+}
+
+.Services-areas-box ul li:hover {
+    cursor: pointer;
+    /* transform: translateX(10px); */
+    text-indent: 4px;
+    color: var(--first-color);
+}
+
+.Services-areas-box ul li::before {
+    position: absolute;
+    content: "";
+    top: 4px;
+    left: 0;
+    margin: auto;
+    border: 6px solid #c8c8c8;
+    border-radius: 6px;
+}
+
+.Services-areas-box ul li::after {
+    position: absolute;
+    content: "";
+    top: 5px;
+    left: 5px;
+    margin: auto;
+    background: #c8c8c8;
+    width: 2px;
+    height: 38px;
+}
+
+.Services-areas-box ul li:nth-last-child(1)::after {
+    display: none;
+}
+
+
+/* **************************Services areas Section end ************* */
+
+
+/* **************************Latest Blogs Section Start ************* */
+
+.Latest-Blogs {
+    background: url(../img/bg-blog.jpg);
+}
+
+.Latest-Blogs h2 {
+    text-align: center;
+    background: var(--first-color);
+    color: #fff;
+    padding: 10px 0;
+    margin: 0;
+}
+
+.blog-card {
+    margin: 30px 0;
+    background: #fff;
+}
+
+.inner-b-card {
+    transition: 0.3s;
+}
+
+.inner-b-card:hover {
+    cursor: pointer;
+}
+
+.card-img {
+    overflow: hidden;
+}
+
+.card-img img {
+    transition: 0.6s;
+}
+
+.card-img img:hover {
+    transform: scale(1.1);
+}
+
+.card-text {
+    padding: 20px;
+    transition: all 0.3s;
+}
+
+.card-text a {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #000;
+}
+
+.card-text:hover {
+    background: var(--first-color);
+    color: #fff;
+}
+
+.card-text:hover>a {
+    color: #fff;
+}
+
+
+/* **************************Latest Blogs Section End *************** */
+
+
+/* **************************customers say Section start************* */
+
+.our-customers {
+    margin: 30px 0;
+}
+
+.our-customers h2 {
+    padding: 10px 0;
+    text-align: center;
+}
+
+.customers-slider {
+    position: relative;
+}
+
+.customers {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 25px;
+    margin: 20px;
+}
+
+.customers img {
+    width: 50px!important;
+    display: inline-block!important;
+}
+
+.flo-right {
+    float: right;
+}
+
+.name-cus {
+    margin-left: 10px
+}
+
+.customers-slider .owl-prev,
+.customers-slider .owl-next {
+    width: 35px;
+    height: 35px;
+    background: #ddd!important;
+    border-radius: 50%!important;
+    transition: 0.3s;
+}
+
+.customers-slider .owl-prev:hover,
+.customers-slider .owl-next:hover {
+    background: var(--first-color)!important;
+}
+
+.customers-slider .owl-prev {
+    position: absolute;
+    top: 50%;
+    left: -30px;
+    transform: translate(0, -50%);
+}
+
+.customers-slider .owl-next {
+    position: absolute;
+    top: 50%;
+    right: -30px;
+    transform: translate(0, -50%);
+}
+
+.customers-slider .owl-nav {
+    margin: 0;
+}
+
+.fa-star {
+    color: #ffc000;
+}
+
+.customers-slider .active {
+    animation: slideInDown 1s 0s;
+}
+
+
+/* **************************customers say Section end  ************* */
+
+
+/* **************************brand slider Section star  ************* */
+
+.b-slider {
+    border-top: 5px solid gray;
+    padding: 20px 0;
+}
+
+.b-slider .owl-prev,
+.b-slider .owl-next {
+    width: 35px;
+    height: 35px;
+    background: #ddd!important;
+    border-radius: 50%!important;
+    transition: 0.3s;
+}
+
+.b-slider .owl-prev:hover,
+.b-slider .owl-next:hover {
+    background: var(--first-color)!important;
+}
+
+.b-slider .owl-prev {
+    position: absolute;
+    top: 50%;
+    left: -30px;
+    transform: translate(0, -50%);
+}
+
+.b-slider .owl-next {
+    position: absolute;
+    top: 50%;
+    right: -30px;
+    transform: translate(0, -50%);
+}
+
+.b-slider .owl-nav {
+    margin: 0;
+}
+
+.inner-b-slider img {
+    cursor: pointer;
+    transition: 0.6s;
+}
+
+.inner-b-slider img:hover {
+    transform: scale(1.1);
+}
+
+.b-slider .active {
+    animation: slideInDown 1s 0s;
+}
+
+
+/* **************************brand slider Section end   ************* */
+
+
+/* **************************Footer Section Start   ***************** */
+
+footer {
+    background: #272b33;
+    color: #cdcdcd;
+    padding: 30px 0;
+}
+
+footer a {
+    color: #cdcdcd;
+}
+
+.Quick-Links ul li {
+    margin-bottom: 10px;
+}
+
+.Contact-Info ul li {
+    margin-bottom: 15px;
+}
+
+.Contact-Info ul li i {
+    margin-right: 10px;
+}
+
+.letter-input input,
+.letter-input button {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 6px 20px;
+    border: none;
+    outline: 0;
+}
+
+.letter-input button {
+    background: var(--first-color);
+    color: #fff;
+    font-weight: 600;
+}
+
+.social-icon span i {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    background: #4c525c;
+    border-radius: 50%;
+    color: #fff;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.social-icon span i:hover {
+    background: var(--second-color);
+    transform: rotate(360deg);
+}
+
+
+/* **************************Footer Section end     ***************** */
+
+
+/* scroll btn */
+
+.s-top-show {
+    position: fixed;
+    top: 90%;
+    right: 2%;
+    width: 100%;
+    animation: scroll 0.6s 1;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.s-top {
+    display: inline-block;
+    /* position: fixed;
+    top: 90%;
+    right: 2%; */
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    background: var(--second-color);
+    z-index: 100;
+    color: #fff;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.s-top:hover {
+    color: #fff;
+}
+
+.s-top i {
+    font-size: 1.5rem;
+}
+
+
+/* **************************CopyRight Section Start***************** */
+
+.copy-right {
+    padding: 10px 0;
+    text-align: center;
+    color: #fff;
+    background: var(--first-color);
+}
+
+.copy-right p {
+    margin: 0;
+}
+
+
+/* **************************CopyRight Section end  ***************** */
+
+
+/* body {
+    background: linear-gradient(to right, #00ccff83, #2958db63), url(blog_img_01.jpg);
+} */
