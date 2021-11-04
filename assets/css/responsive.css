@@ -1,4 +1,7 @@
 @media (max-width:768px) {
+    .r-hide{
+        display:none;
+    }
     /* top bar */
     .icon-num span a {
         font-size: 14px;
